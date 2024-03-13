@@ -1,0 +1,194 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Default Settings */
+
+:root {
+
+    /* Default Colors */
+
+    --primary-color: #f08080;
+    --secundary-color: #fbdcc1;
+    --forest-color: #588157;
+    --dark-color: #0c2115;
+    --dark-blue: #100135;
+
+    /* Default Fonts */
+
+    --primary-font: "Madimi One", sans-serif;
+    --secundary-font: "Ubuntu", sans-serif;
+}
+
+/* Globales */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--secundary-font);
+}
+
+/* Mobile Navbar ----------------------------------------*/ 
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    background-color: var(--primary-color);
+    padding: 1.2rem;
+}
+
+/* Mobile Main Logo */
+
+.img-container__logo {
+    height: 100%;
+}
+.scroll-links, .access-links, .menu-container-tablet {
+    display: none;
+}
+
+/* Mobile Menu-bar Icon */
+
+.menu-container {
+    height: 100%;
+    width: 15vw;
+}
+
+.menu-container__icon {
+    width: 120%;
+    height: 100%;
+}
+
+
+/* Mobile Navbar (Landscape) ------------------------------*/
+
+@media screen and (orientation: landscape) {
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        height: 20vh;
+        background-color: var(--primary-color);
+        padding: 1.2rem;
+    }
+
+    .img-container {
+        padding-bottom: 1.59rem;
+        height: 19vh;
+    }
+
+    .menu-container-tablet__icon {
+        width: 20%;
+
+    }
+
+    .menu-container-tablet__Quote {
+        width: 80%;
+        padding: .5rem 0;
+    }
+
+}
+
+/* Desktop Navbar -----------------------------------------*/
+
+@media (min-width: 768px) {
+
+    .menu-container, .menu-container-tablet {
+        display: none;
+    }
+
+    .navbar {
+        height: 9vh;
+        width: 100vw;
+        background-color: var(--primary-color);
+        padding: 1rem 5rem;
+    }
+
+    .scroll-links, 
+    .access-links {
+        display: flex;
+        align-items: center;
+        width: 30%;
+    }
+
+    .scroll-links {
+        order: 1;
+        column-gap: 1.5vw;
+        padding: 0 2rem;
+    }
+
+    .img-container{
+        display: flex;
+        align-items: center;
+        order: 2;
+        height: 100%;
+        padding-bottom: 0;
+    }
+
+    .img-container__logo {
+        height: 120%;
+        width: 100%;
+    }
+
+
+    .access-links {
+        padding: 0 2rem;
+        order: 3;
+        column-gap: 1.5vw;
+    }
+
+    .scroll-links__link, .access-links__link {
+        font-size: 1.7rem;
+        font-weight: 900;
+        color: var(--dark-blue);
+        position: relative;
+        cursor: pointer;
+        white-space: nowrap;
+
+    }
+
+    .access-links__link--quote {
+        align-self: center;
+        background-color: var(--dark-blue);
+        padding: 1rem 1.7rem;
+        border-radius: 2rem;
+        font-size: 1.7rem;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        white-space: nowrap;
+    }
+
+    /* Links with hover */
+
+    .scroll-links__link::before, 
+    .access-links__link:not(:last-of-type)::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2.5px;
+        background-color: var(--dark-blue);
+        transition: width 0.3s ease-in-out;
+    }
+    
+    .scroll-links__link:hover::before, 
+    .access-links__link:not(:last-of-type):hover::before {
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+
