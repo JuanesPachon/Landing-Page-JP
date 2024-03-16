@@ -279,6 +279,8 @@ body {
 @media (min-width: 1024px) {
     .main-section {
         display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 1.5rem 0;
         background-color: #f2e1df;
     }
@@ -288,14 +290,14 @@ body {
         flex-direction: column;
         justify-content: center;
         padding: 0 3.5vw;
-        max-width: 50vw;
+        max-width: 50%;
     }
 
     .main-section__img {
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 50vw;
+        max-width: 50%;
     }
 
     .main-section__img__background {
@@ -319,11 +321,19 @@ body {
 
     .main-section__info__button,
     .main-section__info__scroll-container {
-        font-size: 1.83vw;
+        font-size: 1.5vw;
     }
 
     .main-section__info__scroll-container {
         padding: 2rem;
     }
+}
+
+/* Desktop 4K Main-section ----------------------*/
+
+@media (min-width: 3200px) {
+     .main-section__info, .main-section__img {
+        max-width: 43%;
+     }
 }
 
