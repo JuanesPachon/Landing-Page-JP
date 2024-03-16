@@ -7,8 +7,10 @@
     <link rel='preload' href='css/style.css' as='style'>
     <link rel='stylesheet' href='css/style.css'>
 
-    <link rel='preload' href='normalize.css' as='style'>
-    <link rel='stylesheet' href='normalize.css'>
+    <link rel='preload' href='css/normalize.css' as='style'>
+    <link rel='stylesheet' href='css/normalize.css'>
+
+    <script src="https://kit.fontawesome.com/fc4bf1a3e4.js" crossorigin="anonymous"></script>
     
     <title>Landing Page</title>
 </head>
@@ -19,31 +21,54 @@
 
             <!-- Mobile Navbar -->
 
-            <div class="img-container">
-                <img class="img-container__logo" src="images/main-logo.png" alt="Logo Principal">
+            <div class="logo-container">
+                <img class="logo-container__logo" src="images/main-logo.png" alt="Logo Principal">
             </div>
 
             <div class="menu-container">
-                <a class="access-links__link access-links__link--quote1">Get a Quote</a>
+                <a class="access-links__link access-links__link--quote1" href="#">Get a Quote</a>
                 <img class="menu-container__icon" src="images/menu-icon.png" alt="Navbar menu">
             </div>
             
             <!-- Desktop Navbar -->
 
             <div class="scroll-links">
-                <a class="scroll-links__link">seccion1</a>
-                <a class="scroll-links__link">seccion2</a>
-                <a class="scroll-links__link">seccion3</a>
+                <a class="scroll-links__link" href="#">seccion1</a>
+                <a class="scroll-links__link" href="#">seccion2</a>
+                <a class="scroll-links__link" href="#">seccion3</a>
             </div>
 
             <div class="access-links">
-                <a class="access-links__link">Help</a>
-                <a class="access-links__link">Sign In</a>
-                <a class="access-links__link access-links__link--quote2">Get a Quote</a>
+                <a class="access-links__link" href="#">Help</a>
+                <a class="access-links__link" href="#">Sign In</a>
+                <a class="access-links__link access-links__link--quote2" href="#">Get a Quote</a>
             </div>
 
         </nav>
     </header>
+
+    <main>
+        <section class="main-section">
+
+            <div class="main-section__info">
+                
+                <h1 class="main-section__info__title">Extreme Adventures Await!</h1>
+                <p class="main-section__info__text">Embark on heart-pounding adventures with our thrilling buggy and electric motorcycles experiences.</p>
+                <p class="main-section__info__text">Our rides promise adrenaline-fueled excitement and unforgettable memories, offering an unforgettable journey filled with thrills.</p>
+                <a class="main-section__info__button" href="#">Get a Quote</a>
+
+                <div class="main-section__info__scroll-container">
+                    <a class="main-section__info__scroll-container__scroll-link" href="#">Check out our services <i class="fa-solid fa-circle-chevron-down" style="color: #fe7369;"></i></a></a>
+                    <a class="main-section__info__scroll-container__scroll-icon" href="#">
+                </div>
+            </div>
+
+            <div class="main-section__img">
+                <img class="main-section__img__background" src="images/main-section-bg.png" alt="Main-section Background">
+            </div>
+
+        </section>
+    </main>
 
 </body>
 </html>
