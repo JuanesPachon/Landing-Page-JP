@@ -162,7 +162,7 @@ body::-webkit-scrollbar {
     max-width: 100%;
 }
 
-/* Mobile Second-section */
+/* Mobile Second-section ---------------------------------------------------*/
 
 .second-section, .second-section__tips {
     display: flex;
@@ -195,6 +195,79 @@ body::-webkit-scrollbar {
 .second-section__tips__text {
     text-align: center;
     font-size: 3.5vw;
+}
+
+/* info-divisor ---------------------------------------------*/
+
+.info-divisor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.2vh;
+    background-color: #2c3e50;
+    text-align: center;
+    font-family: var(--third-font);
+    font-size: clamp(16px, 4vw, 24px);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f2e1df;
+    margin-top: -1rem;
+    
+    @media (min-width: 768px) {     /* little responsive setting */
+         margin: 2rem 0;
+    }
+}
+
+.info-divisor__text {
+    font-size: clamp(12px, 1.6vw, 65px);
+
+    @media (min-width: 768px) {                 /* little responsive setting */
+        font-size: clamp(18px, 1.6vw, 65px);
+    }
+}
+
+.info-divisor__text:hover {
+    text-shadow: 4px 5px black;
+}
+
+/* Mobile Third-section */
+
+.third-section__title{
+    font-family: var(--third-font);
+    font-size: clamp(4rem, 2.2vw, 2.6vw);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.third-section__route {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 2rem;
+}
+
+.third-section__route__image {
+    border: 3px solid black;
+    border-radius: 8px;
+}
+
+.third-section__route__title {
+    font-family: var(--third-font);
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+.third-section__route__text {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.third-section__divisor {
+    background-color: black;
+    padding: .02rem;
+    margin: 0 auto;
+    width: 87%;
 }
 
 
@@ -366,7 +439,7 @@ body::-webkit-scrollbar {
     }
 
     .main-section__info__text {
-        font-size: 1.4vw;
+        font-size: 1.3vw;
         padding-bottom: 2rem;
     }
 
@@ -457,6 +530,9 @@ body::-webkit-scrollbar {
         flex-direction: row;
         margin-top: 6.5rem;
         column-gap: 3rem;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-top: 5rem;
     }
     .second-section__tips {
         width: 33.3%;
@@ -468,7 +544,7 @@ body::-webkit-scrollbar {
     }
     
     .second-section__tips__title {
-        font-size: 2.5vw;
+        font-size: 2.3vw;
         margin-bottom: 1rem;
     }
 
@@ -484,7 +560,63 @@ body::-webkit-scrollbar {
     }
     
     .second-section__tips__text {
-        font-size: 1.4vw;
+        font-size: 1.2vw;
         padding: 0 1rem;
+    }
+}
+
+/*  Tablet Third-section ------------------------------------------*/
+
+@media (min-width: 768px) {
+     .third-section__route__text {
+        font-size: 1.7rem;
+     }
+}
+
+/* Desktop Third-section -----------------------------------------*/
+
+@media (min-width: 1024px) {
+
+    .third-section__divisor{
+        display: none;
+    }
+
+    .third-section {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .third-section__route {
+        max-width: 29vw;
+    }
+
+    .third-section__route__image{
+        width: 100%;
+    }
+
+    .third-section__route__title{
+        font-size: 1.8rem;
+        margin: 1.5rem 0;
+    }
+
+    .third-section__route__text{
+        font-size: 1.5rem;
+    }
+
+}
+
+/* 4k Destop Third-section -------------------------------------------*/
+
+@media (min-width: 3270px) {
+
+
+    .third-section__route__title {
+        font-size: 1.2vw;
+    }
+
+    .third-section__route__text {
+        padding: 0;
+        font-size: 1vw;
     }
 }
