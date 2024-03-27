@@ -249,6 +249,7 @@ body::-webkit-scrollbar {
 .third-section__route__image {
     border: 3px solid black;
     border-radius: 8px;
+    width: 100%;
 }
 
 .third-section__route__title {
@@ -270,7 +271,40 @@ body::-webkit-scrollbar {
     width: 87%;
 }
 
+/* Fourth Section */
 
+.fourth-section__container {
+    margin: 2rem;
+    margin-bottom: .5rem;
+    aspect-ratio: 14 / 7;
+    height: 100%;
+}
+
+.fourth-section__title {
+    margin: 2rem 0;
+    font-size: 7vw;
+    color: var(--dark-blue);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--third-font);
+}
+.fourth-section__map {
+    border: solid black 4px;
+    border-radius: 7px;
+}
+
+.fourth-section__text {
+    font-family: var(--third-font);
+    font-size: 4vw;
+    margin: .2rem 0;
+}
+
+.info-divisor-2 {
+    height: 10vw;
+    background-image: url(../images/waves-divisor.svg);
+    background-size: 100%;
+    border: solid var(--dark-color) 1px;
+}
 /* RESPONSIVE ===================================================================================================================== */
 
 /* Desktop Navbar -----------------------------------------*/
@@ -293,6 +327,7 @@ body::-webkit-scrollbar {
         display: flex;
         align-items: center;
         padding-top: 1rem;
+        font-weight: 900;
     }
 
     .scroll-links {
@@ -618,5 +653,53 @@ body::-webkit-scrollbar {
     .third-section__route__text {
         padding: 0;
         font-size: 1vw;
+    }
+}
+
+/* Tablet Fourth Section ---------------------------------------------*/
+
+@media (min-width: 768px) {
+
+    .fourth-section__title {
+        font-size: 5.5vw;
+    }
+
+    .fourth-section__text {
+        font-size: 3vw;
+        padding: .5rem 0;
+        margin: 0;
+    }
+
+    .info-divisor-2 {
+        height: 6.7vw;
+    }
+
+    .fourth-section__container {
+        max-width: 60vw;
+        margin: 0 auto;
+        padding-bottom: 0;
+        aspect-ratio: 14 / 7;
+        padding: 0 2rem;
+    }
+}
+
+/* Desktop Fourth Section */
+
+@media (min-width: 1024px) {
+     
+    .info-divisor-2 {
+        max-height: 50px;
+        background-position: center;
+    }
+
+    .fourth-section__title {
+        font-size: clamp(45px, 3.5vw, 75px);
+        margin: clamp(3rem, 5vw , 4.5rem);
+    }
+
+    .fourth-section__text {
+        font-size: clamp(22px, 2.5vw, 30px);
+        padding: .5rem 0;
+        margin: 0;
     }
 }
