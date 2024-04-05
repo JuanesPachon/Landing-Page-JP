@@ -91,7 +91,42 @@ body::-webkit-scrollbar {
 
 .menu-container__icon {
     max-width: 5.5rem;
-    
+}
+
+/* Mobile Menu */
+
+.overlay {
+    display: none;
+}
+
+.overlay__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fe7369;
+    border: 3px solid var(--dark-blue);
+    border-left: none;
+    border-right: none;
+}
+
+.scroll-links__link--mobile {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--dark-blue);
+    font-weight: 600;
+    border-collapse: collapse;
+    border: 1px solid #fbdcc1;
+    padding: 1rem 100%;
+    white-space: nowrap;
+}
+
+.scroll-links__link--mobile:first-child {
+    border-top: none;
+}
+
+.scroll-links__link--mobile:last-child {
+    border-bottom: none;
 }
 
 /* Mobile Main-Section -------------------------------------*/
@@ -305,6 +340,7 @@ body::-webkit-scrollbar {
     background-size: 100%;
     border: solid var(--dark-color) 1px;
 }
+
 /* RESPONSIVE ===================================================================================================================== */
 
 /* Desktop Navbar -----------------------------------------*/
@@ -323,6 +359,7 @@ body::-webkit-scrollbar {
         position: fixed;
         top: 0;
         margin-bottom: 5.3rem;
+        z-index: 1000;              /* we add z index due to in second section when hover is active is shown over the navbar */
     }
 
     .scroll-links, 
