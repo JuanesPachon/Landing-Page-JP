@@ -3,7 +3,12 @@
 
 const navbar = document.querySelector(".menu-container__icon");
 const overlay = document.querySelector(".overlay")
-const scrollLinks = document.querySelectorAll(".scroll-links__link--mobile")
+const menuOptions = document.querySelectorAll(".scroll-links__link--mobile")
+
+const scrollLinks = document.querySelectorAll(".scroll-links__link")
+const routes = document.querySelector("#third-section")
+const locationRoute = document.querySelector("#fourth-section")
+
 
 navbar.addEventListener("click", function() {
 
@@ -14,12 +19,25 @@ navbar.addEventListener("click", function() {
     }
 })
 
-scrollLinks.forEach(link => {                 /* We use ForEach due to in this case scrollLinks is a nodelist */
-    link.addEventListener("click", function() {      /* that`s why we gotta add an event for each scroll link */
+scrollLinks[0].addEventListener("click",() => {
+    routes.scrollIntoView({ behavior: 'smooth'})
+});
+
+scrollLinks[1].addEventListener("click",() => {
+    locationRoute.scrollIntoView({ behavior: 'smooth'})
+});
+
+
+menuOptions.forEach(option => {                        /* We use ForEach due to in this case menuOptions is a nodelist */
+    option.addEventListener("click", function() {      /* that`s why we gotta add an event for each scroll link */
         overlay.style.display = 'none';
     });
 });
 
+menuOptions[0].addEventListener("click",() => {
+    routes.scrollIntoView({ behavior: 'smooth'})
+});
 
-
-
+menuOptions[1].addEventListener("click",() => {
+    locationRoute.scrollIntoView({ behavior: 'smooth'})
+});
