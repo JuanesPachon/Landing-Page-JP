@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Madimi+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-/* Default Settings */
+/* //MARK: Default Settings */
 
 :root {
 
@@ -21,7 +21,7 @@
     --third-font: "Fredoka", sans-serif;
 }
 
-/* Globales */
+/* //MARK: Globals */
 
 html {
     box-sizing: border-box;
@@ -42,7 +42,7 @@ body::-webkit-scrollbar {
     height: 0;
 }
 
-/* Mobile Navbar ----------------------------------------*/ 
+/* //MARK: Mobile Navbar ----------------------------------------*/ 
 
 .navbar {
     display: flex;
@@ -130,7 +130,7 @@ body::-webkit-scrollbar {
     border-bottom: none;
 }
 
-/* Mobile Main-Section -------------------------------------*/
+/* //MARK: Mobile Main-Section -------------------------------------*/
 
 /* Main-section Info */
 
@@ -196,7 +196,7 @@ body::-webkit-scrollbar {
     max-width: 100%;
 }
 
-/* Mobile Second-section ---------------------------------------------------*/
+/* //MARK: Mobile Second-section ---------------------------------------------------*/
 
 .second-section, .second-section__tips {
     display: flex;
@@ -231,7 +231,7 @@ body::-webkit-scrollbar {
     font-size: 3.5vw;
 }
 
-/* info-divisor ---------------------------------------------*/
+/* //MARK: info-divisor ---------------------------------------------*/
 
 .info-divisor {
     display: flex;
@@ -264,7 +264,7 @@ body::-webkit-scrollbar {
     text-shadow: 4px 5px black;
 }
 
-/* Mobile Third-section */
+/* //MARK: Mobile Third-section */
 
 .third-section__title{
     font-family: var(--third-font);
@@ -305,7 +305,7 @@ body::-webkit-scrollbar {
     width: 87%;
 }
 
-/* Fourth Section -------------------------------------------*/
+/* //MARK: Fourth Section -------------------------------------------*/
 
 .fourth-section__container {
     margin: 2rem;
@@ -341,7 +341,7 @@ body::-webkit-scrollbar {
     border: solid var(--dark-color) 1px;
 }
 
-/* Fifth section ----------------------------------------------*/
+/* //MARK: Fifth section ----------------------------------------------*/
 
 .fifth-section {
     background-image: url(../images/plans-background.webp);
@@ -431,7 +431,7 @@ body::-webkit-scrollbar {
     background-color: #2c136b;
 }
 
-/* Footer ==================================================*/
+/* //MARK: Footer ==================================================*/
 
 .footer {
     background-color: var(--dark-blue);
@@ -494,7 +494,7 @@ body::-webkit-scrollbar {
 
 /* RESPONSIVE ===================================================================================================================== */
 
-/* Desktop Navbar -----------------------------------------*/
+/* //MARK: Desktop Navbar -----------------------------------------*/
 
 @media (min-width: 768px) {
 
@@ -599,7 +599,7 @@ body::-webkit-scrollbar {
      }
 }
 
-/* Tablet Main-section ------------------------------------------*/
+/* //MARK: Tablet Main-section ------------------------------------------*/
 
 @media (min-width: 760px) {
 
@@ -631,7 +631,7 @@ body::-webkit-scrollbar {
     }
 }
 
-/* Desktop Main-section -------------------------------------------*/
+/* //MARK: Desktop Main-section -------------------------------------------*/
 
 @media (min-width: 1024px) {
     .main-section {
@@ -719,7 +719,7 @@ body::-webkit-scrollbar {
       }
 }
 
-/* Desktop 4K Main-section ---------------------------*/
+/* //MARK: Desktop 4K Main-section ---------------------------*/
 
 @media (min-width: 3200px) {
      .main-section__info, .main-section__img {
@@ -748,14 +748,14 @@ body::-webkit-scrollbar {
       }
 }
 
-/* Tablet Second-section------------------------ */
+/* //MARK: Tablet Second-section------------------------ */
 
 @media (min-width: 768px) {
     .second-section {
         margin-top: 4rem;
     }
 }
-/* Desktop Second-section ---------------------- */
+/* //MARK: Desktop Second-section ---------------------- */
 
 @media (min-width: 1024px) {
     .second-section{
@@ -797,7 +797,7 @@ body::-webkit-scrollbar {
     }
 }
 
-/*  Tablet Third-section ------------------------------------------*/
+/*  //MARK: Tablet Third-section ------------------------------------------*/
 
 @media (min-width: 768px) {
      .third-section__route__text {
@@ -805,7 +805,7 @@ body::-webkit-scrollbar {
      }
 }
 
-/* Desktop Third-section -----------------------------------------*/
+/*  //MARK: Desktop Third-section -----------------------------------------*/
 
 @media (min-width: 1024px) {
 
@@ -838,7 +838,7 @@ body::-webkit-scrollbar {
 
 }
 
-/* 4k Destop Third-section -------------------------------------------*/
+/* //MARK: 4k Destop Third-section -------------------------------------------*/
 
 @media (min-width: 3270px) {
 
@@ -853,7 +853,7 @@ body::-webkit-scrollbar {
     }
 }
 
-/* Tablet Fourth Section ---------------------------------------------*/
+/* //MARK: Tablet Fourth Section ---------------------------------------------*/
 
 @media (min-width: 768px) {
 
@@ -881,7 +881,7 @@ body::-webkit-scrollbar {
     }
 }
 
-/* Desktop Fourth Section */
+/* //MARK: Desktop Fourth Section */
 
 @media (min-width: 1024px) {
      
@@ -906,7 +906,7 @@ body::-webkit-scrollbar {
     }
 }
 
-/* Tablet Fifth section =============================================*/
+/* //MARK: Tablet Fifth section =============================================*/
 
 @media (min-width: 768px) {
 
@@ -966,7 +966,7 @@ body::-webkit-scrollbar {
 
 }
 
-/* Desktop Fifth section */
+/* //MARK: Desktop Fifth section */
 
 @media (min-width: 1024px) {
 
@@ -1025,7 +1025,7 @@ body::-webkit-scrollbar {
       
 }
 
-/* Tablet Footer ===================================================*/
+/* //MARK: Tablet Footer ===================================================*/
 
 @media (min-width: 768px) {
      .footer__logos__logo {
@@ -1047,7 +1047,7 @@ body::-webkit-scrollbar {
     }
 }
 
-/* Background-animation ====================================================================================================*/
+/* //MARK: Background-animation ====================================================================================================*/
 
 @keyframes animate {
     0%{
@@ -1162,7 +1162,7 @@ body::-webkit-scrollbar {
     animation-delay: 29s;
 }
 
-/* Animated background on Mobile =====================================*/
+/* //MARK: Animated background on Mobile =====================================*/
 
 @media (max-width: 767px) {
     .background {
